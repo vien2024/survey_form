@@ -1,1 +1,70 @@
-<h1 id="title">Tell Me about Music</h1>
+<html lang="en">
+  <head>
+    <style>
+     body {
+       font-family: sans-serif;
+       padding-left: 20%;
+       padding-right:20%;
+       margin-left: 20px;
+       margin-right: 20px;
+     }
+     label {
+       font-size: 18px;
+       display: block;
+       padding-bottom: 10px;
+     }
+     input {
+       display: block;
+     }
+     form {
+       background-color: rgb(99, 199, 207);opacity: 0.6;
+     .radio-inline {
+       display: inline-block;
+      }
+    </style> 
+  </head>
+  <body>
+    <h1 id="title">Tell Me about Music</h1>
+    <p id="description">This is a survey form where you can tell us about the music you're inspired by.</p>
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+        <input type="text" name="name" id="name" required placeholder="Enter First Name"></input><br>
+      <label id="email-label">Email:</label> 
+        <input type="email" name="email" id="email" required placeholder="Enter Email"></input><br>
+      <label id="number-label">Number:</label> 
+        <input type="number" name="email" id="number" min="0" max="10" required placeholder="$"></input><br>
+      
+    
+    <select id="dropdown" name="guitars">
+      <option value="fender">Fender</option>
+      <option value="fiat">Fiat</option>
+      <option value="martin">Martin</option>
+      <option value="others">Others</option>
+    </select><br>
+
+
+
+    <input type="radio" id="male" class="radio-inline" name="gender" value="male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" class="radio-inline" name="gender" value="female">
+<label for="female">Female</label><br>
+<input type="radio" id="other" class="radio-inline" name="gender" value="other">
+<label for="other">Other</label>
+     <br>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> I have a boat</label><br>
+
+<textarea placeholder="Additional Comments"></textarea>
+<input type="submit" id="submit">
+
+
+
+
+    </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
